@@ -8,7 +8,7 @@ const int MONTS = 3;
 
 int main()
 {
-	double sales[DISTRICTS][MONTS];
+	/*double sales[DISTRICTS][MONTS];
 
 
 	for (size_t i = 0; i < DISTRICTS; i++)
@@ -19,7 +19,15 @@ int main()
 			cout << ", per month " << j + 1 << ": ";
 			cin >> sales[i][j];
 		}
-	}
+	}*/
+
+	double sales[DISTRICTS][MONTS] =
+	{
+		{1432.07,	234.50,		654.01},
+		{322.00,	13838.32,	17589.88},
+		{9328.34,	934.00,		4492.30},
+		{12838.29,	2332.63,	32.93}
+	};
 
 	cout << "\n\n";
 	cout << "			    Month\n";

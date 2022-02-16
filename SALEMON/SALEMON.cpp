@@ -6,6 +6,8 @@ using namespace std;
 const int DISTRICTS = 4;
 const int MONTS = 3;
 
+void display(double[DISTRICTS][MONTS]);
+
 int main()
 {
 	/*double sales[DISTRICTS][MONTS];
@@ -29,6 +31,16 @@ int main()
 		{12838.29,	2332.63,	32.93}
 	};
 
+	display(sales);
+
+	cout << endl;
+
+	system("pause");
+	return 0;
+}
+
+void display(double funsales[DISTRICTS][MONTS])
+{
 	cout << "\n\n";
 	cout << "			    Month\n";
 	cout << "		   1	     2	       3";
@@ -42,12 +54,7 @@ int main()
 				<< setiosflags(ios::showpoint)
 				<< setprecision(2)
 				<< setw(10)
-				<< sales[i][j];
+				<< funsales[i][j];
 		}
 	}
-
-	cout << endl;
-
-	system("pause");
-	return 0;
 }
